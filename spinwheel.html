@@ -222,7 +222,9 @@ chicken</textarea>
             draw();
 
             
-            maxRotation = (360 * 6) - itemDegs['cat'].endDeg + 10
+            // maxRotation = (360 * 6) - itemDegs['cat'].endDeg + 10
+            maxRotation = randomRange(360 * 3, 360 * 6); // Randomize the rotation
+
             itemDegs = {}
             console.log("max",maxRotation)
             console.log(itemDegs);
