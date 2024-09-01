@@ -215,20 +215,17 @@ chicken</textarea>
             if(speed != 0){
                 return
             }
+            
+            // Reset maxRotation and currentDeg
+            maxRotation = randomRange(360 * 3, 360 * 6);
+            currentDeg = 0;
 
-            maxRotation = 0;
-            currentDeg = 0
-            createWheel()
+            // Create a new wheel with random colors
+            createWheel();
             draw();
 
-            
-            // maxRotation = (360 * 6) - itemDegs['cat'].endDeg + 10
-            maxRotation = randomRange(360 * 3, 360 * 6); // Randomize the rotation
-
-            itemDegs = {}
-            console.log("max",maxRotation)
-            console.log(itemDegs);
-            pause = false
+            // Start the animation
+            pause = false;
             window.requestAnimationFrame(animate);
         }
 
