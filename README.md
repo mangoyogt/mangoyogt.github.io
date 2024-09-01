@@ -1,6 +1,6 @@
 # mangoyogt.github.io
 
-It is a project for learning how to build a websited hosted on GitHub.
+It is a project for learning how to build a website hosted on GitHub.
 
 Credits:
 
