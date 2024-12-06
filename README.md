@@ -1,7 +1,7 @@
 # mangoyogt.github.io
 
-It is a project for learning how to build a website hosted on GitHub.
+This is a project to learn how to create a website hosted on GitHub. I'll document my journey of learning new hobbies on this site. Alos, this project will help me improve my web development skills.
 
 Credits:
 
-[spinwheel.html](https://github.com/nvmao/Spin-The-Wheel/tree/main) - HTML. 
+ - The `spinwheel.html` is based on a design from [here](https://github.com/nvmao/Spin-The-Wheel/tree/main). 

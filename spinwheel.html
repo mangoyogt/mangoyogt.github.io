@@ -23,16 +23,25 @@
             position: relative;
         }
         .center-circle{
-            width: 100px;
+            /* width: 100px;
             height: 100px;
             border-radius: 60px;
             background-color: #fff;
             position: absolute;
             top: 50%;
+            transform: translateY(-50%); */
+            width: 100px;
+            height: 80px;
+            border-radius: 60 px; /* Remove or set to 0 for a rectangular shape. 60 px; */  
+            background-image: url('./images/spin_center_2.png'); /* Replace with your image path */
+            background-size: contain; /* Prevent cropping: contain */ /* Adjust to fit image within the circle: cover;  */
+            background-position: center;
+            position: absolute;
+            top: 50%;
             transform: translateY(-50%);
         }
         .triangle{
-            width: 0; 
+            /* width: 0; 
             height: 0; 
             border-top: 10px solid transparent;
             border-bottom: 10px solid transparent; 
@@ -40,6 +49,15 @@
             position: absolute;
             top: 50%;
             right: -220%;
+            transform: translateY(-50%); */
+            width: 30px; /* Adjust width and height as needed */
+            height: 30px;
+            background-image: url('./images/pizza.jpg'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 50%;   /* Adjust top position */
+            right: -220%;   /* Center horizontally */
             transform: translateY(-50%);
         }
         textarea{
@@ -57,9 +75,11 @@
 
 </head>
 
+<title>Picker Wheel</title>  
+
 <body >
     <div class="header">
-        <h1>WINNER</h1>
+        <h1>WINNER is:</h1>
         <p id="winner">NONE</p>
     </div>
     <div class="wheel">
@@ -72,16 +92,13 @@
     <div class="inputArea" onchange="createWheel()">
         <textarea rows="20" cols="30" >cat
 dog
-cow
-duck
+🐨
 sheep
-goat
-bird
 neko
 chicken</textarea>
     </div>
 
-    <script>
+    <script>        
         function randomColor(){
             r = Math.floor(Math.random() * 255);
             g = Math.floor(Math.random() * 255);
@@ -175,7 +192,7 @@ chicken</textarea>
                 else{
                     ctx.fillStyle = "#fff";
                 }
-                ctx.font = 'bold 24px serif';
+                ctx.font = 'bold 24px arial';
                 ctx.fillText(items[i], 130, 10);
                 ctx.restore();
 
@@ -227,9 +244,12 @@ chicken</textarea>
             // Start the animation
             pause = false;
             window.requestAnimationFrame(animate);
-        }
+        }      
 
     </script>
+
+<noscript>Sorry. Your browser does not support JavaScript.</noscript>
+
 </body>
 
 </html>
